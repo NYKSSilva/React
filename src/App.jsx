@@ -1,14 +1,28 @@
-import {Heading} from './component/heading.jsx'
+import { CardAtivo } from './component/CardAtivo.jsx';
+import { Heading } from './component/Heading.jsx';
+import './styles/theme.css';
+
 export function App() {
-
   return (
-   <>
-   <h1>Hello</h1>
-   <div>
-    <Heading> Componente Heading</Heading>
+    <div className="container">
+      <Heading>Meu Portifólio 2026:</Heading>
+
+      <div className="grid">
+        <CardAtivo titulo="Bitcoin (BTC)">
+          <p>Preço: R$ 350.000,00</p>
+          <span style={{ color: 'var(--alta)', fontWeight: 'bold' }}>+5.2% hoje</span>
+        </CardAtivo>
+
+        <CardAtivo titulo="Fundo Imobiliário (HGLG11)">
+          <p>Dividendo: R$ 1,10</p>
+          <span style={{ color: 'var(--alta)', fontWeight: 'bold' }}>Rendimento estável</span>
+        </CardAtivo>
+
+        <CardAtivo titulo="Empresa X (VALE3)">
+          <p>Preço: R$ 65,20</p>
+          <span style={{ color: 'var(--baixa)', fontWeight: 'bold' }}>-1.8% hoje</span>
+        </CardAtivo>
+      </div>
     </div>
-   </>
-  )
+  );
 }
-
-

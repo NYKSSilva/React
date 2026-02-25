@@ -1,8 +1,7 @@
-import styles from'./Heading.module.css'
-
+import styles from './CardAtivo.module.css';
 export function Heading(props){
     console.log(props)
     return(
-        <h1 className={styles.heading}>{props.children}Olá</h1>
+        <h1 className={styles.heading}>{props.children}</h1>
     )
 }

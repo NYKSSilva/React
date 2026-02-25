@@ -1,6 +1,18 @@
 :root{
-  --primaria: blue;
-  --secundaria: green;
-  --terciaria: red;
+  --alta: #27ae60;
+  --baixa: #e74c3c;
+  --fundo-card: #e4e0e0;
+  --Heading: rgb(144, 190, 216);
 
+}
+.container {
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
